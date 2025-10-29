@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         about: 'Ellipses\nSoftware Engineer\nGithub: https://github.com/SJEllipses\nContact me: sjellipses@gmail.com',
         github: function () { window.open("https://github.com/SJEllipses"); },
-        repo: function () { window.open("https://github.com/SJEllipses/sjellipses.github.io"); }
+        repo: function () { window.open("https://github.com/SJEllipses/sjellipses.github.io"); },
     };
 
     // add input line
@@ -87,6 +87,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 const commandText = input.value.trim();
                 if (commandText) {
                     executeCommand(commandText);
+                }
+                else{
+                    addCommandLine();
                 }
 
                 e.preventDefault();
